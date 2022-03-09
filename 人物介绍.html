@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<link href='http://fonts.font.im/css?family=Orbitron' rel='stylesheet' type='text/css'>
+<link href='http://fonts.font.im/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+<style>
+  #title{
+   font-family: 'Orbitron', sans-serif;
+  }
+  body{
+   background: linear-gradient(45deg, pink, rgb(204, 204, 255), #ffeee6);
+    width: 1500px;
+    height: 3000px;
+  }
+  #frame{
+    width: 800px;
+    height: 400px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: auto;
+  }
+  .grid{
+    font-family: 'Indie Flower', cursive;
+    margin: 50px 100px 10px 100px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 60px 60px 60px 60px;
+  }
+  .grid-1{
+    position: absolute;
+    width:1200px;
+    margin-left: 150px;
+    margin-top: 100px;
+    display: grid;
+   grid-template-columns: 900px 300px;
+  }
+  h1{
+    color: hsl(300, 100%, 40%);
+    text-align: center;
+    font-size: 50px;
+  }
+  h2{
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 80px
+  }
+  h3{
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+  h4{
+    margin-top: 40px;
+    margin-left: 100px
+  }
+  a:hover {
+    color: red;
+  }
+  .yan{
+    width: 900px;
+    height: 350px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 24px;
+  }
+  
+  .d{
+   font-size: 20px;
+  }
+  .yuan{
+    height: 80px;
+    width: 80px;
+    background-color: pink;
+    position: absolute;
+    top: 150px;
+    left: 1000px;
+    transform: rotate(-45deg);
+    animation-name: love;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  .yuan::before{
+    content:"";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: pink;
+    top: 0px;
+    left: 40px;
+  }
+  .yuan::after{
+    content:"";
+    position: absolute;
+    background-color: pink;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    top: -40px;
+    left: 0px;
+  }
+  @keyframes love{
+    50%{
+      transform: scale(1.5) rotate(-45deg);
+    }
+  }  
+  .image{
+    display: block;
+    margin: auto;
+    width: 1000px;
+  }  
+</style>
+
+<body>
+  <header>
+  <h1 id="title">a beautiful girl</h1>
+
+  <img src="https://tse1-mm.cn.bing.net/th/id/R-C.81df0e22fab1469006402870d5e4122c?rik=Rhg74PDeyhL%2fkA&riu=http%3a%2f%2fi0.hdslb.com%2fbfs%2farchive%2fca72ca8eb5ed52f5798143e62f375e01faf6ba5b.jpg&ehk=1r5BNOOYtdG1dmcF%2fMZ3xHCq98k9ms88OWB%2bnxOb8Ww%3d&risl=&pid=ImgRaw&r=0" class="image">
+  <div>
+  <h2><a href="https://baike.baidu.com/item/%E9%BB%84%E5%AE%A3%E7%BB%AE/56172100" target="-black">click here</a> to konw more about her</h2>
+  </div>
+  </header>
+  <main>
+  <div id="frame">
+    <h3>Basic information</h3>
+    <b>
+    <div class="grid">
+      <div class="d"> name: huangxuanqi</div> 
+      <div class="d"> age: 18 years-old</div>
+      <div class="d"> birthplace: SiChuan province</div>
+      <div class="d"> stature: 160cm </div>
+      <div class="d"> constellation: virgo </div>
+      <div class="d"> representation : 《漫画的最后一格》</div>
+      <div class="d"> occupation: singer </div>
+      <div class="d"> alias: 77</div>
+    </div>
+    </b>
+  </div>
+  <article>
+  <div class="grid-1">
+  <div class="yan"><b>On November 22, 2020, he became a student of BEJ48 9, and on December 25, the single "New Year's Moment" and the MV sung with the Siba family were released.
+On August 7, 2021, he participated in the "48 Possibilities of the World" SNH48 GROUP 8th Idol Annual Popularity Finals, and won the 36th place, BEJ48 1st place; on August 24, he also served as SNH48 Team X; on October 19, the MV "The Last Frame of Manga" was officially released.
+On January 8, 2022, he participated in the 8th Golden Melody Awards of SNH48 GROUP, and the song "Friends Band-Aid" sung with Liang Jiao, Huang Yici and Liang Qiao was selected into the Haoyue Group; on January 25, he participated in the "2022 Jilin Satellite TV Spring Festival Gala" with the group; on March 5, he released the single "Unique" with SNH48 GROUP.</b></div>
+    <div class="yuan"></div>
+  </div>
+  </article>
+  </main>
+
+</body>
+</html>
